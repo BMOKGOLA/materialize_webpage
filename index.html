@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>materialize_webpage</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <style>
+        @media(max-width :960px) {
+            .mid-text{
+                float: right !important;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <div class="container">
+        <div class="row">
+        <h1>{{user.fullName}}<img src="{{user.photo}}" width="250"></h1>
+        <div class="cointaner"> 
+        <h3>Which City</h3>
+        {{city.name}}
+        <img src="{{city.photo}}"  alt="" srcset="" width="250">
+        {{city.description}}
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <h1>Foreign Language</h1>
+                <table border="1">
+            {{foreignLanguage.language}}
+            {{oreignLanguage.phrases}}
+            {{foreignLanguage.englishPhrase}}
+            {{foreignLanguage.englishPhrase}}
+            {{foreignLanguage.foreignLanguage}}
+
+           
+                <tr>
+                    <th>English Phrase</th>
+                    <th>French Translation</th>
+                    <th>English Phrase</th>
+                    <th>French Translation</th>
+                </tr>
+                <tr>
+                    <td>Hello</td>
+                    <td>Bonjour</td>
+                    <td>Thank you</td>
+                    <td>Merci</td>
+                </tr>
+                <tr>
+                    <td>How are you?</td>
+                    <td>Comment ça va?</td>
+                    <td>Goodbye</td>
+                    <td>Au revoir</td>
+                </tr>
+                <tr>
+                    <td>I don't understand</td>
+                    <td>Je ne comprends pas</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+     <div class="row" >
+    <h2>Historical places</h2>
+    <div class="row">
+            <div class="col s12 l4">
+                <h3>Kliptown</h3>
+                
+                <div class="row" >
+                
+                <p class="col s6">Kliptown is best known as the location for the 1955 Congress of the People. On June 26, 1955,3,000 representatives of all South African racial and ethnic groups gathered in the centre of Kliptown.</p>
+                     <img src="Kliptown.jpg" width="150" class="col s6">
+                
+            </div>  
+            </div>
+
+     <div class="col s12 l4">
+        <h3>hector-Pieterson</h3>
+                <div class="row">
+                
+                <p class="col s6 mid-text">The Hector Pieterson Museum is located in Orlando West, Soweto, South Africa. It is named in honor of Hector Pieterson, a schoolboy shot and killed during the 1976 Soweto uprising against apartheid.</p>
+                    <img src="hector-pieterson-museum-3 (1).jpg" width="150" class="col s6">
+                </div> 
+                    
+            </div>  
+
+            <div class="col s12 l4">
+                <h3>Regina Mundi</h3>
+                
+                <div class="row">
+                
+                <p class="col s6">Regina Mundi, designed by architect Anthony Noel Errol Slaven, is the largest Roman Catholic church in South Africa. It is located in Rockville, Soweto, Johannesburg.</p>
+                    <img src="Regina.jpg"  width="150" class="col s6"> 
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>

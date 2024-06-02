@@ -1,0 +1,36 @@
+{
+    "user" : {
+        "fullName": "Boitumelo Mokgola",
+        "photo" : "Boitumelo Mokgola.png"
+    },
+    "city" : {
+        "name" : "capetown",
+        "photo" : "Cape Town.jpg",
+        "description" : "I would like to visit Cape Town and go to Table Mountain. I would also love to visit Robben Island and experience the vineyards. The vineyards have good wine and food."
+    },
+    "foreignLanguage" : {
+        "language" : "French",
+        "phrases" : [{
+            "englishPhrase" : "Hello",
+            "foreignLanguage" : "Bonjour"
+        },
+        {
+            "englishPhrase" : "Thank you",
+            "foreignLanguage" : "Merci"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "",
+            "description" : ""
+        },
+        {
+            "name" : "",
+            "description" : ""
+        },
+        {
+            "name" : "",
+            "description" : ""
+        }
+    ]
+}
