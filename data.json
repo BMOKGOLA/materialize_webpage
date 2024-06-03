@@ -1,36 +1,43 @@
 {
     "user" : {
         "fullName": "Boitumelo Mokgola",
-        "photo" : "Boitumelo Mokgola.png"
+        "photo" : "./Boitumelo Mokgola.png"
     },
     "city" : {
         "name" : "capetown",
-        "photo" : "Cape Town.jpg",
+        "photo" : "./Cape Town.jpg",
         "description" : "I would like to visit Cape Town and go to Table Mountain. I would also love to visit Robben Island and experience the vineyards. The vineyards have good wine and food."
     },
     "foreignLanguage" : {
-        "language" : "French",
-        "phrases" : [{
-            "englishPhrase" : "Hello",
-            "foreignLanguage" : "Bonjour"
-        },
-        {
-            "englishPhrase" : "Thank you",
-            "foreignLanguage" : "Merci"
-        }]
+        "language1" : "English",
+        "language2" : "French",
+        "description" :"I like french because because the language is universal"
     },
-    "favouriteSubjects" : [
+        
+        "phrases" : {
+            "englishPhrase1" : "Hello",
+            "foreignPhrase1" : "Bonjour",
+            "englishPhrase2" : "Thank you",
+            "foreignPhrase2" : "Merci"
+        },
+
+        "historicalPlaces" : [
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Kliptown",
+            "description" : "Kliptown is best known as the location for the 1955 Congress of the People. On June 26, 1955,3,000 representatives of all South African racial and ethnic groups gathered in the centre of Kliptown.",
+            "photo" : "./Kliptown.jpg"
+
         },
         {
-            "name" : "",
-            "description" : ""
+            "name" : "hector-Pieterson",
+            "description" : "The Hector Pieterson Museum is located in Orlando West, Soweto, South Africa. It is named in honor of Hector Pieterson, a schoolboy shot and killed during the 1976 Soweto uprising against apartheid.",
+            "photo" :"./hector-pieterson-museum-3 (1).jpg",
+            "position": "mid-text"
         },
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Regina Mundi",
+            "description" : "Regina Mundi, designed by architect Anthony Noel Errol Slaven, is the largest Roman Catholic church in South Africa. It is located in Rockville, Soweto, Johannesburg.",
+            "photo":"./Regina.jpg"
         }
     ]
 }
