@@ -1,0 +1,53 @@
+// data.json
+var data_default = {
+  user: {
+    fullName: "Boitumelo Mokgola",
+    photo: "./Boitumelo Mokgola.png"
+  },
+  city: {
+    name: "capetown",
+    photo: "./Cape Town.jpg",
+    description: "I would like to visit Cape Town and go to Table Mountain. I would also love to visit Robben Island and experience the vineyards. The vineyards have good wine and food."
+  },
+  foreignLanguage: {
+    language1: "English",
+    language2: "French",
+    description: "I like french because because the language is universal"
+  },
+  phrases: {
+    englishPhrase1: "Hello",
+    foreignPhrase1: "Bonjour",
+    englishPhrase2: "Thank you",
+    foreignPhrase2: "Merci"
+  },
+  historicalPlaces: [
+    {
+      name: "Kliptown",
+      description: "Kliptown is best known as the location for the 1955 Congress of the People. On June 26, 1955,3,000 representatives of all South African racial and ethnic groups gathered in the centre of Kliptown.",
+      photo: "./Kliptown.jpg"
+    },
+    {
+      name: "hector-Pieterson",
+      description: "The Hector Pieterson Museum is located in Orlando West, Soweto, South Africa. It is named in honor of Hector Pieterson, a schoolboy shot and killed during the 1976 Soweto uprising against apartheid.",
+      photo: "./hector-pieterson-museum-3 (1).jpg",
+      position: "mid-text"
+    },
+    {
+      name: "Regina Mundi",
+      description: "Regina Mundi, designed by architect Anthony Noel Errol Slaven, is the largest Roman Catholic church in South Africa. It is located in Rockville, Soweto, Johannesburg.",
+      photo: "./Regina.jpg"
+    }
+  ]
+};
+
+// vite.config.js
+import handlebars from "file:///C:/Users/DELL/Documents/projects/materialize_webpage/node_modules/vite-plugin-handlebars/dist/index.js";
+var vite_config_default = {
+  plugins: [handlebars({
+    context: data_default
+  })]
+};
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsiZGF0YS5qc29uIiwgInZpdGUuY29uZmlnLmpzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyJ7XHJcbiAgICBcInVzZXJcIiA6IHtcclxuICAgICAgICBcImZ1bGxOYW1lXCI6IFwiQm9pdHVtZWxvIE1va2dvbGFcIixcclxuICAgICAgICBcInBob3RvXCIgOiBcIi4vQm9pdHVtZWxvIE1va2dvbGEucG5nXCJcclxuICAgIH0sXHJcbiAgICBcImNpdHlcIiA6IHtcclxuICAgICAgICBcIm5hbWVcIiA6IFwiY2FwZXRvd25cIixcclxuICAgICAgICBcInBob3RvXCIgOiBcIi4vQ2FwZSBUb3duLmpwZ1wiLFxyXG4gICAgICAgIFwiZGVzY3JpcHRpb25cIiA6IFwiSSB3b3VsZCBsaWtlIHRvIHZpc2l0IENhcGUgVG93biBhbmQgZ28gdG8gVGFibGUgTW91bnRhaW4uIEkgd291bGQgYWxzbyBsb3ZlIHRvIHZpc2l0IFJvYmJlbiBJc2xhbmQgYW5kIGV4cGVyaWVuY2UgdGhlIHZpbmV5YXJkcy4gVGhlIHZpbmV5YXJkcyBoYXZlIGdvb2Qgd2luZSBhbmQgZm9vZC5cIlxyXG4gICAgfSxcclxuICAgIFwiZm9yZWlnbkxhbmd1YWdlXCIgOiB7XHJcbiAgICAgICAgXCJsYW5ndWFnZTFcIiA6IFwiRW5nbGlzaFwiLFxyXG4gICAgICAgIFwibGFuZ3VhZ2UyXCIgOiBcIkZyZW5jaFwiLFxyXG4gICAgICAgIFwiZGVzY3JpcHRpb25cIiA6XCJJIGxpa2UgZnJlbmNoIGJlY2F1c2UgYmVjYXVzZSB0aGUgbGFuZ3VhZ2UgaXMgdW5pdmVyc2FsXCJcclxuICAgIH0sXHJcbiAgICAgICAgXHJcbiAgICAgICAgXCJwaHJhc2VzXCIgOiB7XHJcbiAgICAgICAgICAgIFwiZW5nbGlzaFBocmFzZTFcIiA6IFwiSGVsbG9cIixcclxuICAgICAgICAgICAgXCJmb3JlaWduUGhyYXNlMVwiIDogXCJCb25qb3VyXCIsXHJcbiAgICAgICAgICAgIFwiZW5nbGlzaFBocmFzZTJcIiA6IFwiVGhhbmsgeW91XCIsXHJcbiAgICAgICAgICAgIFwiZm9yZWlnblBocmFzZTJcIiA6IFwiTWVyY2lcIlxyXG4gICAgICAgIH0sXHJcblxyXG4gICAgICAgIFwiaGlzdG9yaWNhbFBsYWNlc1wiIDogW1xyXG4gICAgICAgIHtcclxuICAgICAgICAgICAgXCJuYW1lXCIgOiBcIktsaXB0b3duXCIsXHJcbiAgICAgICAgICAgIFwiZGVzY3JpcHRpb25cIiA6IFwiS2xpcHRvd24gaXMgYmVzdCBrbm93biBhcyB0aGUgbG9jYXRpb24gZm9yIHRoZSAxOTU1IENvbmdyZXNzIG9mIHRoZSBQZW9wbGUuIE9uIEp1bmUgMjYsIDE5NTUsMywwMDAgcmVwcmVzZW50YXRpdmVzIG9mIGFsbCBTb3V0aCBBZnJpY2FuIHJhY2lhbCBhbmQgZXRobmljIGdyb3VwcyBnYXRoZXJlZCBpbiB0aGUgY2VudHJlIG9mIEtsaXB0b3duLlwiLFxyXG4gICAgICAgICAgICBcInBob3RvXCIgOiBcIi4vS2xpcHRvd24uanBnXCJcclxuXHJcbiAgICAgICAgfSxcclxuICAgICAgICB7XHJcbiAgICAgICAgICAgIFwibmFtZVwiIDogXCJoZWN0b3ItUGlldGVyc29uXCIsXHJcbiAgICAgICAgICAgIFwiZGVzY3JpcHRpb25cIiA6IFwiVGhlIEhlY3RvciBQaWV0ZXJzb24gTXVzZXVtIGlzIGxvY2F0ZWQgaW4gT3JsYW5kbyBXZXN0LCBTb3dldG8sIFNvdXRoIEFmcmljYS4gSXQgaXMgbmFtZWQgaW4gaG9ub3Igb2YgSGVjdG9yIFBpZXRlcnNvbiwgYSBzY2hvb2xib3kgc2hvdCBhbmQga2lsbGVkIGR1cmluZyB0aGUgMTk3NiBTb3dldG8gdXByaXNpbmcgYWdhaW5zdCBhcGFydGhlaWQuXCIsXHJcbiAgICAgICAgICAgIFwicGhvdG9cIiA6XCIuL2hlY3Rvci1waWV0ZXJzb24tbXVzZXVtLTMgKDEpLmpwZ1wiLFxyXG4gICAgICAgICAgICBcInBvc2l0aW9uXCI6IFwibWlkLXRleHRcIlxyXG4gICAgICAgIH0sXHJcbiAgICAgICAge1xyXG4gICAgICAgICAgICBcIm5hbWVcIiA6IFwiUmVnaW5hIE11bmRpXCIsXHJcbiAgICAgICAgICAgIFwiZGVzY3JpcHRpb25cIiA6IFwiUmVnaW5hIE11bmRpLCBkZXNpZ25lZCBieSBhcmNoaXRlY3QgQW50aG9ueSBOb2VsIEVycm9sIFNsYXZlbiwgaXMgdGhlIGxhcmdlc3QgUm9tYW4gQ2F0aG9saWMgY2h1cmNoIGluIFNvdXRoIEFmcmljYS4gSXQgaXMgbG9jYXRlZCBpbiBSb2NrdmlsbGUsIFNvd2V0bywgSm9oYW5uZXNidXJnLlwiLFxyXG4gICAgICAgICAgICBcInBob3RvXCI6XCIuL1JlZ2luYS5qcGdcIlxyXG4gICAgICAgIH1cclxuICAgIF1cclxufSIsICJjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZGlybmFtZSA9IFwiQzpcXFxcVXNlcnNcXFxcREVMTFxcXFxEb2N1bWVudHNcXFxccHJvamVjdHNcXFxcbWF0ZXJpYWxpemVfd2VicGFnZVwiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9maWxlbmFtZSA9IFwiQzpcXFxcVXNlcnNcXFxcREVMTFxcXFxEb2N1bWVudHNcXFxccHJvamVjdHNcXFxcbWF0ZXJpYWxpemVfd2VicGFnZVxcXFx2aXRlLmNvbmZpZy5qc1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9pbXBvcnRfbWV0YV91cmwgPSBcImZpbGU6Ly8vQzovVXNlcnMvREVMTC9Eb2N1bWVudHMvcHJvamVjdHMvbWF0ZXJpYWxpemVfd2VicGFnZS92aXRlLmNvbmZpZy5qc1wiO2ltcG9ydCBkYXRhIGZyb20gJy4vZGF0YS5qc29uJztcclxuaW1wb3J0IGhhbmRsZWJhcnMgZnJvbSAndml0ZS1wbHVnaW4taGFuZGxlYmFycyc7XHJcblxyXG5leHBvcnQgZGVmYXVsdCB7XHJcbiAgICBwbHVnaW5zOiBbaGFuZGxlYmFycyh7XHJcbiAgICAgIGNvbnRleHQgOiAgZGF0YSAgIFxyXG4gICAgICBcclxuICAgIH0pXSxcclxuICB9OyJdLAogICJtYXBwaW5ncyI6ICI7QUFBQTtBQUFBLEVBQ0ksTUFBUztBQUFBLElBQ0wsVUFBWTtBQUFBLElBQ1osT0FBVTtBQUFBLEVBQ2Q7QUFBQSxFQUNBLE1BQVM7QUFBQSxJQUNMLE1BQVM7QUFBQSxJQUNULE9BQVU7QUFBQSxJQUNWLGFBQWdCO0FBQUEsRUFDcEI7QUFBQSxFQUNBLGlCQUFvQjtBQUFBLElBQ2hCLFdBQWM7QUFBQSxJQUNkLFdBQWM7QUFBQSxJQUNkLGFBQWU7QUFBQSxFQUNuQjtBQUFBLEVBRUksU0FBWTtBQUFBLElBQ1IsZ0JBQW1CO0FBQUEsSUFDbkIsZ0JBQW1CO0FBQUEsSUFDbkIsZ0JBQW1CO0FBQUEsSUFDbkIsZ0JBQW1CO0FBQUEsRUFDdkI7QUFBQSxFQUVBLGtCQUFxQjtBQUFBLElBQ3JCO0FBQUEsTUFDSSxNQUFTO0FBQUEsTUFDVCxhQUFnQjtBQUFBLE1BQ2hCLE9BQVU7QUFBQSxJQUVkO0FBQUEsSUFDQTtBQUFBLE1BQ0ksTUFBUztBQUFBLE1BQ1QsYUFBZ0I7QUFBQSxNQUNoQixPQUFTO0FBQUEsTUFDVCxVQUFZO0FBQUEsSUFDaEI7QUFBQSxJQUNBO0FBQUEsTUFDSSxNQUFTO0FBQUEsTUFDVCxhQUFnQjtBQUFBLE1BQ2hCLE9BQVE7QUFBQSxJQUNaO0FBQUEsRUFDSjtBQUNKOzs7QUN6Q0EsT0FBTyxnQkFBZ0I7QUFFdkIsSUFBTyxzQkFBUTtBQUFBLEVBQ1gsU0FBUyxDQUFDLFdBQVc7QUFBQSxJQUNuQixTQUFXO0FBQUEsRUFFYixDQUFDLENBQUM7QUFDSjsiLAogICJuYW1lcyI6IFtdCn0K
